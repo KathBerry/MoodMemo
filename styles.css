@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie&family=Gaegu&family=Mali:wght@300;400;500&family=Sue+Ellen+Francisco&display=swap');
+
+body {
+    background-color: #FDE2E4;
+    color: #4B3F72;
+    font-family: 'Mali', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+h1 {
+    text-align: center;
+    color: #6A0572;
+    font-family: 'Elsie', cursive;
+    font-size: 3em;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#postTitle, #postContent {
+    padding: 10px;
+    border: 2px solid #D8A7B1;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    font-family: 'Gaegu', cursive;
+}
+
+#postImage {
+    padding: 10px;
+    border: 2px solid #D8A7B1;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    font-family: 'Gaegu', cursive;
+}
+
+button {
+    background-color: #E4BAD4;
+    color: #FFF;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Gaegu', cursive;
+}
+
+button:hover {
+    background-color: #C08497;
+}
+
+.posts {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #FFF;
+    border: 2px solid #D8A7B1;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.post-title {
+    font-weight: bold;
+    color: #6A0572;
+    font-family: 'Elsie', cursive;
+}
+
+.post-date {
+    font-size: 12px;
+    color: #8D6A9F;
+}
+
+.post-content {
+    margin-top: 10px;
+    color: #4B3F72;
+    font-family: 'Mali', cursive;
+}
+
+.post img {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.delete-btn {
+    background-color: #FF6F61;
+    color: #FFF;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    font-family: 'Gaegu', cursive;
+}
+
+.delete-btn:hover {
+    background-color: #FF4A3A;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #8D6A9F;
+    font-family: 'Gaegu', cursive;
+}

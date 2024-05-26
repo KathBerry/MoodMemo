@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodMemo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie&family=Gaegu&family=Mali:wght@300;400;500&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MoodMemo</h1>
+        <div class="post-form">
+            <input type="text" id="postTitle" placeholder="A wonderful day">
+            <textarea id="postContent" placeholder="How do you feel?"></textarea>
+            <input type="file" id="postImage" accept="image/*">
+            <button onclick="addPost()">Post</button>
+        </div>
+        <div class="posts" id="posts"></div>
+    </div>
+    <footer>© 2024, bxrry system - by bxrry</footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
